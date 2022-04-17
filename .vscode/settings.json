@@ -1,0 +1,10 @@
+{
+  "files.autoSave": "afterDelay",
+  "html.format.wrapAttributes": "force-aligned",
+  "editor.formatOnSave": true,
+  "editor.fontSize": 16,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.autoClosingBrackets": "always",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.guides.bracketPairs": "active"
+}
