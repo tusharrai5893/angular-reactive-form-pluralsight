@@ -53,7 +53,7 @@ export class CustomerComponent implements OnInit {
   }
 
   private validationMessages = {
-    required: "Field is required",
+    r: "Field is required",
     email: "Please enter a valid email",
     confirmEmail: "Entered email doesn't match",
     firstName: "Firstname is required",
@@ -69,13 +69,13 @@ export class CustomerComponent implements OnInit {
       emailGroup: this.fb.group(
         {
           email: ["", [Validators.required, Validators.email]],
-          confirmEmail: ["", [Validators.required]],
+          confirmEmail: ["", [ Validators.email]],
         },
         { validator: emailmatcher }
       ),
       phone: "",
       notification: "email",
-      rating: ["", ratingRange(1, 7)],
+      rating: ["1-7", ratingRange(1, 7)],
       sendCatalog: true,
       address: this.fb.array([this.buildAddresinstances()]),
     });
